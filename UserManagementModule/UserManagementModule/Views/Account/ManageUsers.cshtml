@@ -1,0 +1,85 @@
+﻿<div>
+    <div class="row topGap-15">
+        <div class="form-group col-md-5">
+            <input name="Users" ng-model="query" type="text" placeholder="Search Users By Name Or Email Or Organization Or Role" class="form-control input-md" required>
+        </div>
+        <div class="col-md-2">
+            </div>
+            <div class="col-md-2">
+                <a href="#" ui-sref="App.AddUser" data-ng-show="access.Add" class=" btn btn-warning btn-block">Add User</a>
+
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" ui-sref="App.ManageUserPermissions" data-ng-show="access.Finalize" class=" btn btn-warning btn-block">Manage Permissions for Users</a>
+
+            </div>
+
+        </div>
+    <script type="text/ng-template" id="ManageProfile.html">
+    </script>
+    <table class="table table-hover bg-gred-2">
+        <thead>
+            <tr class="btn-primary">
+                <th>
+                    <span>First Name</span>
+                </th>
+                <th>
+                    <span>Last Name</span>
+                </th>
+
+                <th>
+                    Email Address
+                </th>
+                <th>
+                    <span>Organization Name</span>
+                </th>
+                <th>
+                    <span>User Role</span>
+                </th>
+                <th>
+                    Account Create Date
+                </th>
+                
+                <th>
+                    Actions
+                </th>
+                <th data-ng-show="access.ReActivate">
+                    Account Active/InActive
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Total Record: {{todos.length}}-->
+
+            <tr style="width: 100%" dir-paginate="item in UserList | filter:search |itemsPerPage:5">
+
+                <td>{{item.UserFirstName}}</td>
+                <td>{{item.UserLastName}}</td>
+                <td>{{item.UserEmailId}}</td>
+                <td>{{item.OrgName}}</td>
+                <td style="width:162px;">{{item.RoleName}}</td>
+                <td>{{item.CreatedOn  | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+
+                <td>
+                    <span>
+                        <a href=# ui-sref="App.ManageProfile({UserId:item.UserId ,param:query})" data-ng-show="access.Edit" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="#" data-ng-click="DeleteUserInfo(item,$index)" data-ng-show="access.Delete" class="btn btn-warning btn-sm">Delete</a>
+                    </span>
+                </td>
+                <td data-ng-show="access.ReActivate">
+                    <span>
+                        <a href="#" data-ng-click="InActiveUser(item.UserId)" data-ng-show="{{item.IsActive}}" class="btn btn-info btn-sm">InActive</a>
+                        <a href="#" data-ng-click="ActiveUser(item.UserId)" data-ng-show="item.IsActive==false" class="btn btn-default pad-button btn-sm">Active</a>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <dir-pagination-controls max-size="5"
+                             direction-links="true"
+                             boundary-links="true">
+    </dir-pagination-controls>
+
+</div>
+

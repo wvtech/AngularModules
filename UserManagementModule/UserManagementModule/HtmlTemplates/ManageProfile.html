@@ -1,0 +1,139 @@
+﻿
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form" class="bg-gred padding-20 bord-rade-10 topGap-15">
+                <h2>Update Profile <small>Update Profile As</small></h2>
+                <div>
+                    <label><input type="radio" ng-init="CurrentUser.RegisteredAs='Organization'" ng-model="CurrentUser.RegisteredAs" name="RegisteredAs" value="Organization" required />Organization</label>
+                    <label><input type="radio" ng-model="CurrentUser.RegisteredAs" name="RegisteredAs" value="Individual" required />Individual</label>
+                </div>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input type="text" ng-model="CurrentUser.OrgName" name="OrgName" class="form-control input-md" ng-required="CurrentUser.RegisteredAs=='Organization'" ng-disabled="CurrentUser.RegisteredAs=='Individual' || loading " id="display_name" placeholder="Organization Name" tabindex="1">
+                            <span style="color:red" ng-show="AddUser.OrgName.$dirty && AddUser.OrgName.$invalid">Organization Name is required.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input type="text" ng-model="CurrentUser.OrgStreet" name="OrgStreet" placeholder="Organization Street" class="form-control input-md" ng-disabled="CurrentUser.RegisteredAs=='Individual'" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="main">
+                            <autocompleteorgstate ng-model="CurrentUser.OrgState" ng-disabled="CurrentUser.RegisteredAs=='Individual' || loading" name="State" attr-placeholder="type to search States..." click-activation="true" data="States" on-type="updateStates" required></autocompleteorgstate>
+                        </div>
+                        <span style="color:red" ng-show="UpdateUser.State.$dirty && UpdateUser.State.$invalid">State is required.</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="main">
+                            <autocompleteorgcity ng-model="CurrentUser.OrgCity" ng-disabled="CurrentUser.RegisteredAs=='Individual' || loading" name="City" attr-placeholder="type to search Cities..." click-activation="true" data="cities" on-type="updateCities" required></autocompleteorgcity>
+
+                        </div>
+                        <span style="color:red" ng-show="UpdateUser.City.$dirty && UpdateUser.City.$invalid">City is required.</span>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group topGap-15">
+                            <input name="FirstName" ng-model="CurrentUser.UserFirstName" type="text" ng-disabled="loading" placeholder="First Name" class="form-control input-md" required tabindex="2">
+                            <span style="color:red" ng-show="UpdateUser.FirstName.$dirty && UpdateUser.FirstName.$invalid">FirstName is required.</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group topGap-15">
+                            <input name="LastName" ng-model="CurrentUser.UserLastName" type="text" ng-disabled="loading" placeholder="Last Name" class="form-control input-md" required tabindex="3">
+                            <span style="color:red" ng-show="UpdateUser.LastName.$dirty && UpdateUser.LastName.$invalid">LastName is required.</span>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input name="Username" ng-model="CurrentUser.UserName" type="text" ng-disabled="loading" placeholder="User Name" class="form-control input-md" required data-unique-username tabindex="4">
+                            <span style="color:red" ng-show="UpdateUser.Username.$dirty && UpdateUser.Username.$error.required">User Name is required.</span>
+                            <span style="color:red" ng-show="UpdateUser.Email.$error.isDuplicateUsername">This UserName is already taken.</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input name="Email" type="email" ng-disabled="loading" ng-model="CurrentUser.UserEmailId" placeholder="Email Address" class="form-control input-md" required data-unique-email tabindex="5">
+                            <span style="color:red" ng-show="UpdateUser.Email.$error.email">Invalid Email address.</span>
+                            <span style="color:red" ng-show="UpdateUser.Email.$dirty && UpdateUser.Email.$error.required">Email is required.</span>
+                            <span style="color:red" ng-show="UpdateUser.Email.$error.isDuplicatedEmail">This Email is already taken.</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input name="Password" ng-model="CurrentUser.Password" ng-disabled="loading" type="password" placeholder="Password" minlength="7" ng-maxlength="15" class="form-control input-md" required tabindex="6">
+                            <span style="color:red" ng-show="UpdateUser.Password.$dirty && UpdateUser.Password.$invalid">Password is required.</span>
+                            <span style="color: red" class="error" ng-show="UpdateUser.Password.$dirty && UpdateUser.Password.$error.minlength">Atleast 7 characters required.</span>
+                        </div>
+                    </div>
+                  
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input name="Number" ng-model="CurrentUser.UserMobileNo" ng-disabled="loading" type="text" maxlength="14" placeholder="Contact No" class="form-control input-md" required tabindex="8">
+                            <span style="color:red" ng-show="UpdateUser.Number.$dirty && UpdateUser.Number.$invalid">Contact No. is required.</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="main">
+                            <autocomplete ng-model="CurrentUser.UserCity" ng-disabled="loading" attr-placeholder="type to search Cities..." click-activation="true" data="cities" on-type="updateCities"></autocomplete>
+                        </div>
+                        <span style="color:red" ng-show="UpdateUser.City.$dirty && UpdateUser.City.$invalid">City is required.</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="main">
+                            <autocompletestate ng-model="CurrentUser.UserState" ng-disabled="loading" attr-placeholder="type to search States..." click-activation="true" data="States" on-type="updateStates"></autocompletestate>
+                        </div>
+                        <span style="color:red" ng-show="UpdateUser.State.$dirty && UpdateUser.State.$invalid">State is required.</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group topGap-15">
+                            <input name="Street" type="text" ng-disabled="loading" ng-model="CurrentUser.UserStreet" placeholder="" class="form-control input-md" required>
+                            <span style="color:red" ng-show="UpdateUser.Street.$dirty && UpdateUser.Street.$invalid">Street is required.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <input type="submit" name="singlebutton" class="btn btn-primary btn-block" ng-disabled="UpdateUser.$invalid || loading" ng-click="InsertOrgAndUser(CurrentUser)" value="Update" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                </div>-->
+            </div>
+        </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+

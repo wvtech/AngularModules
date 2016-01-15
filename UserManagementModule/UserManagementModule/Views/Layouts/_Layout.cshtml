@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html data-ng-app="App">
+<head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+    <link href="~/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/main-bootstrap.min.css" rel="stylesheet" />
+   
+    @*<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">*@
+    @*<link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicsker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">*@
+  <link href="~/CSS/bootstrap-datetimepicker.css" rel="stylesheet" />
+ 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="~/Scripts/jquery.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="~/CSS/loading-bar.css" rel="stylesheet" />
+    <link href="~/CSS/app.css" rel="stylesheet" />
+    <link href="~/CSS/sweetalert.css" rel="stylesheet" />   
+   <link href="~/CSS/autocompleteUserRole.css" rel="stylesheet" />
+    <link href="~/CSS/autocomplete.css" rel="stylesheet" />
+    <link href="~/CSS/autocompleteorgcity.css" rel="stylesheet" />
+    <link href="~/CSS/autocompletestate.css" rel="stylesheet" />
+    <link href="~/CSS/autocompleteorgstate.css" rel="stylesheet" />  
+     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/sweetalert.min.js"></script>
+    @*<script src="~/Anguler_Files/AngulerLibrary/demoofsweetalert.js"></script>*@
+    <script src="~/Anguler_Files/AngulerLibrary/angular.js"></script>
+ <script src="~/Anguler_Files/AngulerLibrary/ng-map.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
+    <script src="~/Scripts/0.14.3.ui-bootstrap.js"></script>
+     <script src="~/Anguler_Files/AngulerLibrary/angular-file-upload.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/angular-local-storage.min.js"></script>
+    @*<script src="~/Anguler_Files/AngulerLibrary/angular-sanitize-1.5.0-beta.1.js"></script>*@
+    @*<script src="~/Anguler_Files/AngulerLibrary/angular-animate.min-1.2.16.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/angular-animate.min-1.2.0.js"></script>*@
+    <script src="~/Anguler_Files/AngulerLibrary/angular-ui-router.min.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/angular-loading-bar.0.6.0.loading-bar.min.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/autocompleteUserRole.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/autocompleteorgcity.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/autocomplete.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/autocompletestate.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/autocompleteorgstate.js"></script>
+    <script src="~/Anguler_Files/AngulerLibrary/dirPagination.js"></script>
+    <script src="~/Anguler_Files/App.js"></script>
+    <script src="~/Anguler_Files/App-Config.js"></script>
+    <script src="~/Anguler_Files/GetURL_Services.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/CurrentProfileService.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/GetPermissionServices.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/flash.service.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/RoleService.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/CityService.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/StateService.js"></script>
+    <script src="~/Anguler_Files/AngulerServices/ModuleServices.js"></script>
+    <script src="~/Anguler_Files/Registration/RegistrationService.js"></script>
+    <script src="~/Anguler_Files/Login/LoginService.js"></script> 
+    <script src="~/Anguler_Files/ProfileManagement/ManageProfileServices.js"></script>    
+    <script src="~/Anguler_Files/UserTypeManagement/UserPermissionsServices.js"></script>
+    <script src="~/Anguler_Files/AngulerDirectives/CheckUniqueEmail.js"></script>
+    <script src="~/Anguler_Files/AngulerDirectives/CheckUniqueUsername.js"></script>   
+    <script src="~/Anguler_Files/Registration/RegistrationController.js"></script>
+    <script src="~/Anguler_Files/Login/LoginController.js"></script>       
+    <script src="~/Anguler_Files/ProfileManagement/ShowUsersController.js"></script>
+    <script src="~/Anguler_Files/Login/AdminLayoutCtrl.js"></script>
+    <script src="~/Anguler_Files/ProfileManagement/ManageUsersController.js"></script>
+    <script src="~/Anguler_Files/UserTypeManagement/UserPermissionsController.js"></script>
+
+   
+</head>
+<body>
+    <div>
+        
+        @RenderBody()
+      
+
+    </div>
+</body>
+</html>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/moment-with-locales.js"></script>
+<script src="~/Scripts/bootstrap-datetimepicker.js"></script>

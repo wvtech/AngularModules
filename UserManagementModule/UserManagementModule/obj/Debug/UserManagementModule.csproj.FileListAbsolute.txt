@@ -1,0 +1,13 @@
+D:\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll.config
+D:\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll
+D:\UserManagementModule\UserManagementModule\bin\UserManagementModule.pdb
+D:\UserManagementModule\UserManagementModule\bin\Newtonsoft.Json.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.Helpers.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.Mvc.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.Razor.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.Deployment.xml
+D:\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.Razor.xml
+D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.dll
+D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.pdb
+D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.csprojResolveAssemblyReference.cache

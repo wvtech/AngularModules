@@ -1,0 +1,139 @@
+﻿<section>
+    <div>
+        <div class="row">
+            <div class="board">
+                <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <div class="liner"></div>
+                        <li class="active">
+                            <a ui-sref="App" href="#home" data-toggle="tab" title="App">
+                                <span class="round-tabs one">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li ng-class="{'active':$state.includes('App')}">
+                            <a ui-sref="App.ManageProfile" href="#messages" data-toggle="tab" title="Manage Profile">
+                                <span class="round-tabs three">
+                                    <i class="glyphicon glyphicon-file"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li ng-class="{'active':$state.includes('App')}" data-ng-show="access.UserManagement">
+                            <a ui-sref="App.ManageUsers" href="#settings" data-toggle="tab" title="Manage Users">
+                                <span class="round-tabs four">
+                                    <i class="fa fa-users"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        @*<li>
+                    <a href="#doner" data-toggle="tab" title="completed">
+                        <span class="round-tabs five">
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </span>
+                    </a>
+                </li>*@
+                        <li>
+                            <a href="#profile" data-toggle="tab" title="Logout" ng-click="logout()">
+                                <span class="round-tabs two">
+                                    <i class="glyphicon glyphicon-off"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                @*<div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+
+                            <h3 class="head text-center">Welcome to Project<sup>™</sup> <span style="color:#f48260;">♥</span></h3>
+                            <p class="narrow text-center">
+                                My Project
+                            </p>
+
+                            <p class="text-center">
+                                <a href="" class="btn btn-success btn-outline-rounded green"> start using Project <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <h3 class="head text-center">Create a Project<sup>™</sup> Profile</h3>
+                            <p class="narrow text-center">
+                                My Project
+                            </p>
+
+                            <p class="text-center">
+                                <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                            </p>
+
+                        </div>
+                        <div class="tab-pane fade" id="messages">
+                            <h3 class="head text-center">Bootsnipp goodies</h3>
+                            <p class="narrow text-center">
+                                My Project
+                            </p>
+
+                            <p class="text-center">
+                                <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="settings">
+                            <h3 class="head text-center">Drop comments!</h3>
+                            <p class="narrow text-center">
+                                Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                            </p>
+
+                            <p class="text-center">
+                                <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="doner">
+                            <div class="text-center">
+                                <i class="img-intro icon-checkmark-circle"></i>
+                            </div>
+                            <h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
+                            <p class="narrow text-center">
+                                Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>*@
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div>
+    @*<ul>
+        <li ui-sref-active="active">
+            <a ui-sref="App">App</a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="#" ng-click="logout()">Logout</a>
+        </li>
+        <li ng-class="{'active':$state.includes('App')}">
+            <a ui-sref="App.ManageProfile">Manage Profile</a>
+        </li>
+        <li ng-class="{'active':$state.includes('App')}" data-ng-show="access.UserManagement">
+            <a ui-sref="App.ManageUsers">Manage Users</a>
+        </li>
+       
+      </ul>*@
+  
+  
+     <div ui-view>
+
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        $('a[title]').tooltip();
+    });
+</script>

@@ -1,0 +1,89 @@
+﻿
+<div class="bg-gred padding-10 topGap-10 bord-rade-10">
+    <h2 class="font-normal">Permission For Modules</h2><hr />
+    <form name="Permissions">
+        <div class="topGap-30 row">
+            <div class="form-inline">
+                <div class="form-group col-md-6">
+                    <label>Select User Type:</label>
+                    <select class="form-control" name="UserRole" ng-model="roleid" ng-options="x as x.RoleName group by createdby(s.CreatedByOrg_Id) for x in Roles" ng-change="GetUsersByOrgIdAndRoleId()" required>
+                        <option value="0">Select</option>
+                        <!--<optgroup label="Admin Roles">
+                            <option data-ng-repeat="s in Roles" data-ng-if="s.CreatedByOrg_Id == '58'" value="{{s.RoleId}}">{{s.RoleName}}</option>
+                        </optgroup>
+                        <optgroup label="Organization Roles" data-ng-show="OrganizationRoles">
+                            <option data-ng-repeat="s in Roles" data-ng-if="s.CreatedByOrg_Id !='58'" value="{{s.RoleId}}">{{s.RoleName}}</option>
+                        </optgroup>-->
+                    </select>
+                    <span ng-show="Permissions.UserRole.$error.required" style="color:red">Select User Type First.</span>
+                </div>
+
+                <div class="col-md-6" ng-show="GetRoles">
+                    <label>Select User (Optional) :</label>
+                    <select class="form-control" id="Users" ng-model="Users" ng-options="x as x.EmailId for x in UsersInRole track by x.UserId" ng-change="GetPermissionsByUserRoleOrUserId()">
+                        <option value="0">Select</option>
+                        <!--<option data-ng-repeat="s in UsersInRole" value="{{s.UserId}}">{{s.EmailId}}</option>-->
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row topGap-30">
+            <div class="col-md-12">
+                <div class="hipaa-table-contain">
+
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                            <tr class="btn-primary">
+                                <th><span>Modules</span></th>
+                                <th><span>All</span></th>
+                                <th><span>Add</span></th>
+                                <th><span>Edit</span></th>
+                                <th><span>Delete</span></th>
+                                <th><span>View</span></th>
+                                <th><span>Re-activate</span></th>
+                                <th><span>Print</span></th>
+                                <th><span>Finalize/SetPermissions</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left-imp"><input id="SelectAlls" class="checkbox-custom" type="checkbox" ng-disabled="loading" ng-model="SelectAll" ng-change="SelectAllModules()" /><label for="SelectAlls" class="checkbox-custom-label"></label><span class="leftGap-5">Select All</span></td>
+                                <td><input id="All" class="checkbox-custom" ng-model="SelectAll" ng-disabled="loading" ng-change="SelectAllModules()" type="checkbox" /><label for="All" class="checkbox-custom-label"></label></td>
+                                <td><input id="Add" class="checkbox-custom" ng-model="SelectAllAdd" ng-disabled="loading" data-ng-click="SelectAllModulesADD()" type="checkbox" /><label for="Add" class="checkbox-custom-label"></label></td>
+                                <td><input id="Edit" class="checkbox-custom" ng-model="SelectAllEdit" ng-disabled="loading" data-ng-click="SelectAllModulesEdit()" type="checkbox" /><label for="Edit" class="checkbox-custom-label"></label></td>
+                                <td><input id="Delete" class="checkbox-custom" ng-model="SelectAllDelete" ng-disabled="loading" data-ng-click="SelectAllModulesDelete()" type="checkbox" /><label for="Delete" class="checkbox-custom-label"></label></td>
+                                <td><input id="View" class="checkbox-custom" ng-model="SelectAllView" ng-disabled="loading" data-ng-click="SelectAllModulesView()" type="checkbox" /><label for="View" class="checkbox-custom-label"></label></td>
+                                <td><input id="Reactivate" class="checkbox-custom" ng-model="SelectAllReactivate" ng-disabled="loading" data-ng-click="SelectAllModulesReactivate()" type="checkbox" /><label for="Reactivate" class="checkbox-custom-label"></label></td>
+                                <td><input id="Print" class="checkbox-custom" ng-model="SelectAllPrint" ng-disabled="loading" data-ng-click="SelectAllModulesPrint()" type="checkbox" /><label for="Print" class="checkbox-custom-label"></label></td>
+                                <td><input id="Finalize" class="checkbox-custom" ng-model="SelectAllFinalize" ng-disabled="loading" data-ng-click="SelectAllModulesFinalize()" type="checkbox" /><label for="Finalize" class="checkbox-custom-label"></label></td>
+                            </tr>
+                            <tr data-ng-repeat="s in Modules">
+                                <!--<td class="text-left-imp">
+                                    <input type="checkbox" ng-disabled="loading" id="All_{{s.ModuleId}}" ng-model=" All[s.ModuleId]" data-ng-click="set_SelectAllPermission(s.ModuleId)" /><label for="All_{{s.ModuleId}}" class="checkbox-custom-label"></label><span class="leftGap-5">{{s.ModuleName}}</span></td>-->
+                                <td class="text-left-imp">     <input type="checkbox" class="checkbox-custom" id="All_{{s.ModuleId}}" ng-model="All[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllPermission(s.ModuleId)" /> <label for="All_{{s.ModuleId}}" class="checkbox-custom-label"></label><span class="leftGap-5">{{s.ModuleName}}</span></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="AllModules_{{s.ModuleId}}" ng-model="AllModules[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllModulePermission(s.ModuleId)" /><label for="AllModules_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="ADD_{{s.ModuleId}}" ng-model="ADD[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllAdd(s.ModuleId)" /><label for="ADD_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="EDIT_{{s.ModuleId}}" ng-model="EDIT[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllEdit(s.ModuleId)" /><label for="EDIT_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="DELETE_{{s.ModuleId}}" ng-model="DELETE[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllDelete(s.ModuleId)" /><label for="DELETE_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="VIEW_{{s.ModuleId}}" ng-model="VIEW[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllView(s.ModuleId)" /><label for="VIEW_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="REACTIVE_{{s.ModuleId}}" ng-model="REACTIVE[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllReactive(s.ModuleId)" /><label for="REACTIVE_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="PRINT_{{s.ModuleId}}" ng-model="PRINT[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllPrint(s.ModuleId)" /><label for="PRINT_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                                <td><input type="checkbox" class="checkbox-custom" id="FINALIZE_{{s.ModuleId}}" ng-model="FINALIZE[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllFinalize(s.ModuleId)" /><label for="FINALIZE_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="form-group">
+            <div class="topGap-10">
+                <button id="singlebutton" name="singlebutton" ng-disabled="loading" data-ng-click="InsertUserPermissions()" class="btn btn-primary">Save</button>
+
+            </div>
+        </div>
+
+    </form>
+</div>

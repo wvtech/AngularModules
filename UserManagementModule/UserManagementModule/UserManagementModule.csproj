@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C26BBFA-F41F-49A8-A210-59FEC150DF1E}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserManagementModule</RootNamespace>
+    <AssemblyName>UserManagementModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Anguler_Files\Activity\ActivityService.js" />
+    <Content Include="Anguler_Files\AngulerDirectives\CheckUniqueEmail.js" />
+    <Content Include="Anguler_Files\AngulerDirectives\CheckUniqueUsername.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-animate.min-1.2.0.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-animate.min-1.2.16.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-file-upload-shim.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-file-upload.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-file-upload.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-loading-bar.0.6.0.loading-bar.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-local-storage.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-local-storage.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-route.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-sanitize-1.5.0-beta.1.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-ui-router.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular-upload.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\angular.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\autocomplete.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\autocompleteorgcity.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\autocompleteorgstate.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\autocompletestate.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\autocompleteUserRole.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\bootstrap-datetimepicker.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\common.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\demoofsweetalert.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\dirPagination.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\ng-map.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\sweetalert.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\sweetalert2.min.js" />
+    <Content Include="Anguler_Files\AngulerLibrary\ui-bootstrap-tpls-0.11.2.js" />
+    <Content Include="Anguler_Files\AngulerServices\CityService.js" />
+    <Content Include="Anguler_Files\AngulerServices\CurrentProfileService.js" />
+    <Content Include="Anguler_Files\AngulerServices\flash.service.js" />
+    <Content Include="Anguler_Files\AngulerServices\GetPermissionServices.js" />
+    <Content Include="Anguler_Files\AngulerServices\ModuleServices.js" />
+    <Content Include="Anguler_Files\AngulerServices\RoleService.js" />
+    <Content Include="Anguler_Files\AngulerServices\StateService.js" />
+    <Content Include="Anguler_Files\App-Config.js" />
+    <Content Include="Anguler_Files\App.js" />
+    <Content Include="Anguler_Files\GetURL_Services.js" />
+    <Content Include="Anguler_Files\Login\AdminLayoutCtrl.js" />
+    <Content Include="Anguler_Files\Login\LoginController.js" />
+    <Content Include="Anguler_Files\Login\LoginService.js" />
+    <Content Include="Anguler_Files\ProfileManagement\ManageProfileServices.js" />
+    <Content Include="Anguler_Files\ProfileManagement\ManageUsersController.js" />
+    <Content Include="Anguler_Files\ProfileManagement\ShowUsersController.js" />
+    <Content Include="Anguler_Files\Registration\RegistrationController.js" />
+    <Content Include="Anguler_Files\Registration\RegistrationService.js" />
+    <Content Include="Anguler_Files\UserTypeManagement\UserPermissionsController.js" />
+    <Content Include="Anguler_Files\UserTypeManagement\UserPermissionsServices.js" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\UserManagementModule.dll" />
+    <Content Include="bin\UserManagementModule.pdb" />
+    <Content Include="CSS\app.css" />
+    <Content Include="CSS\autocomplete.css" />
+    <Content Include="CSS\autocompleteorgcity.css" />
+    <Content Include="CSS\autocompleteorgstate.css" />
+    <Content Include="CSS\autocompletestate.css" />
+    <Content Include="CSS\autocompleteUserRole.css" />
+    <Content Include="CSS\bootstrap-datetimepicker-standalone.css" />
+    <Content Include="CSS\bootstrap-datetimepicker.css" />
+    <Content Include="CSS\bootstrap-datetimepicker.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="CSS\jquery-ui.css" />
+    <Content Include="CSS\jquery.signaturepad.css" />
+    <Content Include="CSS\loading-bar.css" />
+    <Content Include="CSS\main-bootstrap.min.css" />
+    <Content Include="CSS\sweetalert.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlTemplates\AddUsers.html" />
+    <Content Include="HtmlTemplates\AdminLayout.html" />
+    <Content Include="HtmlTemplates\Login.html" />
+    <Content Include="HtmlTemplates\ManageProfile.html" />
+    <Content Include="HtmlTemplates\Registration.html" />
+    <Content Include="HtmlTemplates\UserPermissions.html" />
+    <Content Include="obj\Debug\UserManagementModule.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\UserManagementModule.dll" />
+    <Content Include="obj\Debug\UserManagementModule.pdb" />
+    <Content Include="Scripts\0.14.3.ui-bootstrap.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\flashcanvas.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.5.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.devbridge-autocomplete.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.signaturepad.js" />
+    <Content Include="Scripts\jquery.signaturepad.min.js" />
+    <Content Include="Scripts\json2.min.js" />
+    <Content Include="Scripts\loading-bar.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\smoke.js" />
+    <Content Include="Scripts\sorttable.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\AdminLayout.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\ManageUsers.cshtml" />
+    <Content Include="Views\Layouts\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\UserManagementModule.dll.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54014</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54014/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,52 @@
+/* AUTOCOMPLETE */
+
+.autocompleteuserrole{
+  width: 100%;
+  position: relative;
+}
+
+.autocompleteuserrole input{
+  font-size: 1.2em;
+  width: 100%;
+  padding: 3px 12px;
+}
+
+.autocompleteuserrole ul{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-left: 0px solid #888;
+  border-right: 0px solid #888;
+  border-bottom: 0px solid #888;
+  z-index: 1;
+   overflow-y:auto;
+  max-height:200px;
+  min-height:200px;
+}
+
+.autocompleteuserrole li{
+  text-align: left;
+  list-style:circle;
+  width: 100%;
+  padding:0.4em;
+  background-color: #fff;
+}
+
+.autocompleteuserrole li.active{
+  width: 100%;
+  background-color: #4bf;
+}
+
+.autocompleteuserrole .highlight {
+  background-color: #E2E2E2;
+}
+
+.autocompleteuserrole li.active .highlight {
+  background: #666;
+  color: #fff;
+}
+.main{  
+  
+  /*width: 30em;
+  margin-bottom: 5em;*/
+}
