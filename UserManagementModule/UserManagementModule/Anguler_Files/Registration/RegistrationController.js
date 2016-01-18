@@ -10,6 +10,8 @@
         $scope.RegModel = {};      
         var RegData = $scope.RegModel;
         $scope.loading = false;
+        $scope.States = {};
+        $scope.cities = {};
 
         if ($stateParams.UserId) {
            
@@ -135,6 +137,7 @@
 
                 if (data.Response == "1") {
                     swal('Good Job...', "User profile saved successfully!", 'success');
+                    $location.path("/App.ManageUsers");
                 }
                 else {
                     swal('Oops...', data.Message, 'error');
@@ -164,8 +167,7 @@
             var data = { "StateName": typed };
             $scope.newState = StateService.AutoCompleteState(data);
             $scope.newState.then(function (data) {                
-                $scope.States = data.data;
-                
+                $scope.States = data.data;                
             });
         }
      

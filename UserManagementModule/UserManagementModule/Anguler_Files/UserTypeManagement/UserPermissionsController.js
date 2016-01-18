@@ -410,7 +410,8 @@
                 $scope.SetAllAtEnd();
             }
             else {
-                //  alert('F'); $scope.SelectAll = false;
+                //  alert('F');
+                $scope.SelectAll = false;
                 $scope.SelectAllView = false;
                 $scope.AllModules[PId] = false;
                 $scope.All[PId] = false;
@@ -421,6 +422,13 @@
                 $scope.PRINT[PId] = false;
                 $scope.VIEW[PId] = false;
                 $scope.FINALIZE[PId] = false;
+                $scope.SelectAllAdd = false;
+                $scope.SelectAllEdit = false;
+                $scope.SelectAllDelete = false;
+                $scope.SelectAllView = false;
+                $scope.SelectAllReactivate = false;
+                $scope.SelectAllPrint = false;
+                $scope.SelectAllFinalize = false;
             }
         }
 
@@ -648,7 +656,7 @@
                 }
             }
             else {
-                swal('Oops...', "You have not selected any User Type.\n Please select User Type first.", 'error');
+                swal('Oops...', "You have not selected any UserType.\n Please select UserType first.", 'error');
             }
         }
 

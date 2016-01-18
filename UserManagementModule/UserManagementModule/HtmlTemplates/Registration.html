@@ -3,8 +3,8 @@
 
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form name="AddUser" role="form" autocomplete="off" class="bg-gred padding-20 bord-rade-10">
-                <h2> <small>Register As </small></h2><hr />
+            <form name="AddUser" role="form" class="bg-gred padding-20 bord-rade-10" autocomplete="off">
+                <h2>Register As </h2><hr />
                 <div>
                     <label><input type="radio" ng-init="RegModel.RegisteredAs='Organization'" ng-model="RegModel.RegisteredAs" name="RegisteredAs" value="Organization" required />Organization</label>
                     <label><input type="radio" ng-model="RegModel.RegisteredAs" name="RegisteredAs" value="Individual" required />Individual</label>
@@ -40,24 +40,24 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input name="aaaa" autocomplete="off" type="email" ng-disabled="loading" ng-model="RegModel.UserEmailId" placeholder="Email Address" class="form-control input-md" required data-unique-email tabindex="5">
-                            <span style="color:red" ng-show="AddUser.aaaa.$error.email">Invalid Email address.</span>
-                            <span style="color:red" ng-show="AddUser.aaaa.$dirty && AddUser.aaaa.$error.required">Email is required.</span>
-                            <span style="color:red" ng-show="AddUser.aaaa.$error.isDuplicatedEmail">This Email is already taken.</span>
+                            <input name="Email" type="email" autocomplete="off" ng-disabled="loading" ng-model="RegModel.UserEmailId" placeholder="Email Address" class="form-control input-md" required data-unique-email tabindex="5">
+                            <span style="color:red" ng-show="AddUser.Email.$error.email">Invalid Email address.</span>
+                            <span style="color:red" ng-show="AddUser.Email.$dirty && AddUser.Email.$error.required">Email is required.</span>
+                            <span style="color:red" ng-show="AddUser.Email.$error.isDuplicatedEmail">This Email is already taken.</span>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input name="bbbb" autocomplete="off" ng-model="RegModel.Password" ng-disabled="loading" type="password" placeholder="Password" minlength="7" ng-maxlength="15" class="form-control input-md" required tabindex="6">
-                            <span style="color:red" ng-show="AddUser.bbbb.$dirty && AddUser.bbbb.$invalid">Password is required.</span>
-                            <span style="color: red" class="error" ng-show="AddUser.bbbb.$dirty && AddUser.Password.$error.minlength">Atleast 7 characters required.</span>
+                            <input name="Password" autocomplete="off" ng-model="RegModel.Password" ng-disabled="loading" type="password" placeholder="Password" minlength="7" ng-maxlength="15" class="form-control input-md" required tabindex="6">
+                            <span style="color:red" ng-show="AddUser.Password.$dirty && AddUser.Password.$invalid">Password is required.</span>
+                            <span style="color: red" class="error" ng-show="AddUser.Password.$dirty && AddUser.Password.$error.minlength">Atleast 7 characters required.</span>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input name="cccc" autocomplete="off" ng-model="RegModel.ConfirmPassord" ng-disabled="loading" type="password" placeholder="Confirm Password" class="form-control input-md" required tabindex="7">
-                            <span style="color:red" ng-show="AddUser.cccc.$dirty && AddUser.cccc.$invalid">Confirm Password is required.</span>
-                            <span style="color:red" ng-show="AddUser.cccc.$dirty && RegModel.ConfirmPassord!=RegModel.Password">Password and Confirm Password do not match.</span>
+                            <input name="ConfirmPassword" autocomplete="off" ng-model="RegModel.ConfirmPassord" ng-disabled="loading" type="password" placeholder="Confirm Password" class="form-control input-md" required tabindex="7">
+                            <span style="color:red" ng-show="AddUser.ConfirmPassword.$dirty && AddUser.ConfirmPassword.$invalid">Confirm Password is required.</span>
+                            <span style="color:red" ng-show="AddUser.ConfirmPassword.$dirty && RegModel.ConfirmPassord!=RegModel.Password">Password and Confirm Password do not match.</span>
                         </div>
                     </div><div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
@@ -84,24 +84,10 @@
                     </div>
 
                 </div>
-
-                <!--<div class="row">
-            <div class="col-xs-4 col-sm-3 col-md-3">
-                <span class="button-checkbox">
-                    <button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
-                    <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
-                </span>
-            </div>
-            <div class="col-xs-8 col-sm-9 col-md-9">
-                By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
-            </div>
-        </div>-->
-
                 <hr class="colorgraph">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <input type="submit" name="singlebutton" class="btn btn-primary btn-block" ng-disabled="AddUser.$invalid || loading" ng-click="InsertOrgAndUser(RegModel)" value="Register" />
-                        <!--<span class="leftGap-10">Already have an account? <a href='#'>Click Here</a> </span>-->
                     </div>
                     <div class="col-xs-12 col-md-6"><a ui-sref="Login" class="btn btn-warning btn-block">Sign In</a></div>
                 </div>

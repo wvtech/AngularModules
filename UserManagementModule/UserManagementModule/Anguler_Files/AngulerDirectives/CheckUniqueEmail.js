@@ -110,9 +110,6 @@ App.directive('uniqueEmail', function ($http , GetURL_Services, ManageProfileSer
       });
                             }
                         }
-                        else {
-                            swal('Oops...', 'User with this Email Address already exists.', 'error');
-                        }
                     }
 
                 });

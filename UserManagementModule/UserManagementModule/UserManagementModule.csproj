@@ -200,6 +200,8 @@
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\ihover.css" />
+    <Content Include="CSS\ihover.min.css" />
     <Content Include="CSS\jquery-ui-1.10.4.custom.min.css" />
     <Content Include="CSS\jquery-ui.css" />
     <Content Include="CSS\jquery.signaturepad.css" />
@@ -239,6 +241,7 @@
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\smoke.js" />
     <Content Include="Scripts\sorttable.js" />
+    <Content Include="Views\1.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

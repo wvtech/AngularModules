@@ -31,7 +31,7 @@
             <div class="col-md-12">
                 <div class="hipaa-table-contain">
 
-                    <table class="table table-hover table-responsive">
+                    <table class="table table-hover table-res">
                         <thead>
                             <tr class="btn-primary">
                                 <th><span>Modules</span></th>
@@ -59,7 +59,7 @@
                             </tr>
                             <tr data-ng-repeat="s in Modules">
                                 <!--<td class="text-left-imp">
-                                    <input type="checkbox" ng-disabled="loading" id="All_{{s.ModuleId}}" ng-model=" All[s.ModuleId]" data-ng-click="set_SelectAllPermission(s.ModuleId)" /><label for="All_{{s.ModuleId}}" class="checkbox-custom-label"></label><span class="leftGap-5">{{s.ModuleName}}</span></td>-->
+                <input type="checkbox" ng-disabled="loading" id="All_{{s.ModuleId}}" ng-model=" All[s.ModuleId]" data-ng-click="set_SelectAllPermission(s.ModuleId)" /><label for="All_{{s.ModuleId}}" class="checkbox-custom-label"></label><span class="leftGap-5">{{s.ModuleName}}</span></td>-->
                                 <td class="text-left-imp">     <input type="checkbox" class="checkbox-custom" id="All_{{s.ModuleId}}" ng-model="All[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllPermission(s.ModuleId)" /> <label for="All_{{s.ModuleId}}" class="checkbox-custom-label"></label><span class="leftGap-5">{{s.ModuleName}}</span></td>
                                 <td><input type="checkbox" class="checkbox-custom" id="AllModules_{{s.ModuleId}}" ng-model="AllModules[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllModulePermission(s.ModuleId)" /><label for="AllModules_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>
                                 <td><input type="checkbox" class="checkbox-custom" id="ADD_{{s.ModuleId}}" ng-model="ADD[s.ModuleId]" ng-disabled="loading" data-ng-click="set_SelectAllAdd(s.ModuleId)" /><label for="ADD_{{s.ModuleId}}" class="checkbox-custom-label"></label></td>

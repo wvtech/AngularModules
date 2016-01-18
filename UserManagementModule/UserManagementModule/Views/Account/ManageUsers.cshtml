@@ -3,45 +3,46 @@
         <div class="form-group col-md-5">
             <input name="Users" ng-model="query" type="text" placeholder="Search Users By Name Or Email Or Organization Or Role" class="form-control input-md" required>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             </div>
-            <div class="col-md-2">
+            @*<div class="col-md-2">
                 <a href="#" ui-sref="App.AddUser" data-ng-show="access.Add" class=" btn btn-warning btn-block">Add User</a>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
 
                 <a href="#" ui-sref="App.ManageUserPermissions" data-ng-show="access.Finalize" class=" btn btn-warning btn-block">Manage Permissions for Users</a>
 
-            </div>
+            </div>*@
 
         </div>
     <script type="text/ng-template" id="ManageProfile.html">
     </script>
-    <table class="table table-hover bg-gred-2">
+   
+    <table class="table table-hover bg-gred-2 table-res">
         <thead>
             <tr class="btn-primary">
-                <th>
+                <th width="100px">
                     <span>First Name</span>
                 </th>
-                <th>
+                <th width="100px">
                     <span>Last Name</span>
                 </th>
 
                 <th>
                     Email Address
                 </th>
-                <th>
+                <th width="150px">
                     <span>Organization Name</span>
                 </th>
-                <th>
+                <th width="100px">
                     <span>User Role</span>
                 </th>
-                <th>
+                <th width="175px">
                     Account Create Date
                 </th>
-                
-                <th>
+
+                <th width="150px">
                     Actions
                 </th>
                 <th data-ng-show="access.ReActivate">
@@ -55,10 +56,12 @@
             <tr style="width: 100%" dir-paginate="item in UserList | filter:search |itemsPerPage:5">
 
                 <td>{{item.UserFirstName}}</td>
-                <td>{{item.UserLastName}}</td>
+               
+                <td>{{item.UserLastName}}
+                </td>
                 <td>{{item.UserEmailId}}</td>
                 <td>{{item.OrgName}}</td>
-                <td style="width:162px;">{{item.RoleName}}</td>
+                <td>{{item.RoleName}}</td>
                 <td>{{item.CreatedOn  | date:"MM/dd/yyyy 'at' h:mma"}}</td>
 
                 <td>
@@ -76,10 +79,11 @@
             </tr>
         </tbody>
     </table>
-    <dir-pagination-controls max-size="5"
-                             direction-links="true"
-                             boundary-links="true">
-    </dir-pagination-controls>
+      
+        <dir-pagination-controls max-size="5"
+                                 direction-links="true"
+                                 boundary-links="true">
+        </dir-pagination-controls>
 
-</div>
+    </div>
 

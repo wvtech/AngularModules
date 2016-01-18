@@ -35,9 +35,8 @@
 
         $scope.GetPermissionForModule();
 
-       
+        var data = { "OrgId": $scope.CurrentUser.OrgId, "UserId": $scope.CurrentUser.UserId };
         $scope.GetUsersByOrgId = function () {
-            var data = { "OrgId": $scope.CurrentUser.OrgId, "UserId": $scope.CurrentUser.UserId };
             ManageProfileServices.GetUsersByOrgId(data).success(function (data) {
 
                 if (data != "") {

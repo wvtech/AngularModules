@@ -3,8 +3,8 @@
 
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form name="AddUser" role="form" class="bg-gred padding-20 bord-rade-10 topGap-15">
-                <h2>Update Profile <small>Update Profile As</small></h2>
+            <form name="UpdateUser" role="form" class="bg-gred padding-20 bord-rade-10 topGap-15">
+                <h2> Update Profile As </h2>
                 <div>
                     <label><input type="radio" ng-init="CurrentUser.RegisteredAs='Organization'" ng-model="CurrentUser.RegisteredAs" name="RegisteredAs" value="Organization" required />Organization</label>
                     <label><input type="radio" ng-model="CurrentUser.RegisteredAs" name="RegisteredAs" value="Individual" required />Individual</label>
@@ -14,7 +14,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
                             <input type="text" ng-model="CurrentUser.OrgName" name="OrgName" class="form-control input-md" ng-required="CurrentUser.RegisteredAs=='Organization'" ng-disabled="CurrentUser.RegisteredAs=='Individual' || loading " id="display_name" placeholder="Organization Name" tabindex="1">
-                            <span style="color:red" ng-show="AddUser.OrgName.$dirty && AddUser.OrgName.$invalid">Organization Name is required.</span>
+                            <span style="color:red" ng-show="UpdateUser.OrgName.$dirty && AddUser.OrgName.$invalid">Organization Name is required.</span>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group topGap-15">
-                            <input name="Street" type="text" ng-disabled="loading" ng-model="CurrentUser.UserStreet" placeholder="" class="form-control input-md" required>
+                            <input name="Street" type="text" ng-disabled="loading" ng-model="CurrentUser.UserStreet" placeholder="Street" class="form-control input-md" required>
                             <span style="color:red" ng-show="UpdateUser.Street.$dirty && UpdateUser.Street.$invalid">Street is required.</span>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
 
                 <hr class="colorgraph">
                 <div class="row">
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-md-6 col-md-push-3">
                         <input type="submit" name="singlebutton" class="btn btn-primary btn-block" ng-disabled="UpdateUser.$invalid || loading" ng-click="InsertOrgAndUser(CurrentUser)" value="Update" />
                     </div>
                 </div>

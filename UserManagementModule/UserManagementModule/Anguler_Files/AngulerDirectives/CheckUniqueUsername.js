@@ -14,7 +14,7 @@
                     url: custUrl+'/api/Organization/CheckUniqueUserName/',
                     data: JSON.stringify(data)
                 }).success(function (data) {
-                    alert(data.Response + '' + 'ResponseUniqueUsername');
+                   // alert(data.Response + '' + 'ResponseUniqueUsername');
                     if (data.Response == 1) {
                         ngModel.$setValidity('isDuplicateUsername', true);
                         //alert(data.Response + 'true');

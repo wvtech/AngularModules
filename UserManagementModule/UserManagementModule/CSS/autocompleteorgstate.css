@@ -20,8 +20,8 @@
   border-bottom: 0px solid #888;
   z-index: 1;
    overflow-y:auto;
-  max-height:200px;
-  min-height:200px;
+  max-height:150px;
+  min-height:150px;
 }
 
 .autocompleteorgstate li{
