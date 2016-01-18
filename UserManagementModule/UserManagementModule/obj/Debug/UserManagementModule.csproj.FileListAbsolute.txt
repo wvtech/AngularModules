@@ -11,3 +11,8 @@ D:\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.Razor.xml
 D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.dll
 D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.pdb
 D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.csprojResolveAssemblyReference.cache
+C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll.config
+C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll
+C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.pdb
+C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.dll
+C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.pdb

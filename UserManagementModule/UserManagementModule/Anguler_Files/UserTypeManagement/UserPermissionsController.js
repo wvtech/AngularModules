@@ -648,7 +648,7 @@
                 }
             }
             else {
-                swal('Oops...', "You have not selected any UserType.\n Please select UserType first.", 'error');
+                swal('Oops...', "You have not selected any User Type.\n Please select User Type first.", 'error');
             }
         }
 

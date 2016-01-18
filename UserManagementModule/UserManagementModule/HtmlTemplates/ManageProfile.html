@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form role="form" class="bg-gred padding-20 bord-rade-10 topGap-15">
+            <form name="AddUser" role="form" class="bg-gred padding-20 bord-rade-10 topGap-15">
                 <h2>Update Profile <small>Update Profile As</small></h2>
                 <div>
                     <label><input type="radio" ng-init="CurrentUser.RegisteredAs='Organization'" ng-model="CurrentUser.RegisteredAs" name="RegisteredAs" value="Organization" required />Organization</label>
@@ -73,7 +73,7 @@
                             <span style="color: red" class="error" ng-show="UpdateUser.Password.$dirty && UpdateUser.Password.$error.minlength">Atleast 7 characters required.</span>
                         </div>
                     </div>
-                  
+
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                             <input name="Number" ng-model="CurrentUser.UserMobileNo" ng-disabled="loading" type="text" maxlength="14" placeholder="Contact No" class="form-control input-md" required tabindex="8">
