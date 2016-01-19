@@ -1,0 +1,198 @@
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.dll.config
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.pdb
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Antlr3.Runtime.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.SqlServer.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Newtonsoft.Json.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Owin.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Net.Http.Formatting.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Cors.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Helpers.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Cors.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Owin.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.WebHost.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Mvc.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Optimization.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Razor.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Razor.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\WebGrease.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Net.Http.Formatting.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Cors.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Newtonsoft.Json.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Helpers.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.WebHost.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Mvc.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Optimization.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Razor.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Razor.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Antlr3.Runtime.pdb
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.SqlServer.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Owin.xml
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.dll
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.pdb
+D:\WideVisionProject\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.csprojResolveAssemblyReference.cache
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.dll.config
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\CRM_RepairManagement.pdb
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Antlr3.Runtime.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.SqlServer.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Newtonsoft.Json.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Owin.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Net.Http.Formatting.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Cors.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Helpers.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Cors.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Owin.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.WebHost.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Mvc.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Optimization.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Razor.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Razor.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\WebGrease.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Net.Http.Formatting.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Cors.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Newtonsoft.Json.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Helpers.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.WebHost.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Mvc.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Optimization.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Razor.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.WebPages.Razor.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Antlr3.Runtime.pdb
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\EntityFramework.SqlServer.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\bin\System.Web.Http.Owin.xml
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.csprojResolveAssemblyReference.cache
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.dll
+\\192.168.0.22\Dotnet\Website backup\Nakul\CRM_RepairManagement\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.pdb
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\CRM_RepairManagement.dll.config
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\CRM_RepairManagement.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\CRM_RepairManagement.pdb
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Antlr3.Runtime.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\EntityFramework.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\EntityFramework.SqlServer.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Newtonsoft.Json.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Owin.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Net.Http.Formatting.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Cors.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Helpers.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.Cors.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.Owin.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.WebHost.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Mvc.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Optimization.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Razor.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\WebGrease.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Net.Http.Formatting.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.Cors.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Newtonsoft.Json.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Helpers.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.WebHost.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Mvc.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Optimization.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Razor.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Antlr3.Runtime.pdb
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\EntityFramework.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\EntityFramework.SqlServer.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Google.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\bin\System.Web.Http.Owin.xml
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.csprojResolveAssemblyReference.cache
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.dll
+D:\GitHub\CRM_RepairManagement_API\CRM_RepairManagement\obj\Debug\CRM_RepairManagement.pdb

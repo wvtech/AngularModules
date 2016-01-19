@@ -14,13 +14,6 @@ D:\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.cspr
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll.config
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.dll
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\UserManagementModule.pdb
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\Newtonsoft.Json.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.Helpers.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.Mvc.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.Razor.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\bin\System.Web.WebPages.Razor.xml
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.csprojResolveAssemblyReference.cache
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.dll
 C:\Users\Earth-Two\AngularModulesRepo\UserManagementModule\UserManagementModule\obj\Debug\UserManagementModule.pdb
