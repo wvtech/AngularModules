@@ -35,7 +35,7 @@ embed our code in his project and continue with further requirements.
 ## API Reference
  (http://103.231.44.154:6542/)
  
- ## How To Add/Use this module in Your project.
+## How To Add/Use this module in Your project.
  
  * Download the zip from the link (https://github.com/wvtech/AngularModules) and unzip it in your system.
  * First add all the views in your project from (\UserManagementModule\HtmlTemplates)
@@ -55,14 +55,14 @@ embed our code in his project and continue with further requirements.
                 url: "{*url}",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
             );
-            
       in RouteConfig.cs file inside 'App_Start' folder.
-  *  As this entire module uses API for performing all operations as Insert ,Update ,Delete or get the data.So now you have to
+
+*  As this entire module uses API for performing all operations as Insert ,Update ,Delete or get the data.So now you have to
      Open the folder 'API_For_UserManagement' which you get inside the unzipped folder,you have downloaded.Execute this API
-     project using its .sln and get the API URL. Update this API URL in 'GetURL_Services' file inside (UserManagementModule\Anguler_Files)
+     project using its .sln and get the API URL. Update this API URL in 'GetURL_Services' file inside     (UserManagementModule\Anguler_Files)
      as 
      var custurl = "http://localhost:51156/"; // Change '51156' with your API project's port no.
-  * We have also provided our database script with all Tables, Stored procedures, and Functions for your convinience.Run this script 
+* We have also provided our database script with all Tables, Stored procedures, and Functions for your convinience.Run this script 
     in your database and get all essentials for executing the module's API.
-  * Finally in API project's (API_For_UserManagement)'s  WebConfig file change the connection string according to your Database Name
+* Finally in API project's (API_For_UserManagement)'s  WebConfig file change the connection string according to your Database Name
     and Credential.
