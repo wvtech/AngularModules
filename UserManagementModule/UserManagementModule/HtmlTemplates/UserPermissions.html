@@ -7,7 +7,7 @@
                 <div class="form-group col-md-6">
                     <label>Select User Type:</label>
                     <select class="form-control" name="UserRole" ng-model="roleid" ng-options="x as x.RoleName group by createdby(s.CreatedByOrg_Id) for x in Roles" ng-change="GetUsersByOrgIdAndRoleId()" required>
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <!--<optgroup label="Admin Roles">
                             <option data-ng-repeat="s in Roles" data-ng-if="s.CreatedByOrg_Id == '58'" value="{{s.RoleId}}">{{s.RoleName}}</option>
                         </optgroup>
@@ -21,7 +21,7 @@
                 <div class="col-md-6" ng-show="GetRoles">
                     <label>Select User (Optional) :</label>
                     <select class="form-control" id="Users" ng-model="Users" ng-options="x as x.EmailId for x in UsersInRole track by x.UserId" ng-change="GetPermissionsByUserRoleOrUserId()">
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <!--<option data-ng-repeat="s in UsersInRole" value="{{s.UserId}}">{{s.EmailId}}</option>-->
                     </select>
                 </div>
